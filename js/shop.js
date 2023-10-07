@@ -46,7 +46,7 @@ $(document).ready(function(){
       var pos = $(this).offset().top;
 
       var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
+        if (pos < winTop + 800) {
           $(this).addClass("op-1");
         }
     });
@@ -56,6 +56,14 @@ $(document).ready(function(){
       var winTop = $(window).scrollTop();
         if (pos < winTop + 900) {
           $(this).addClass("fade-show");
+        }
+    });
+    $(".zoom").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("zoom-in");
         }
     });
   });

@@ -58,8 +58,8 @@
                     asdd
 
                   </div>
-                  <div class="col-12 col-md-6 slideanim">
-                    asda
+                  <div class="col-12 col-md-6 zoom">
+                    <img src="<?=$this->getLayoutUrl('img/pic/pic3.png') ?>" alt="logo">
                   </div>
                 </div>
               </div>
