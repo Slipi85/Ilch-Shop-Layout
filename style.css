@@ -410,6 +410,24 @@ header .sticky {
 .partner-content img:hover {
     filter:none;
 }
+.op-0 {
+    opacity:0;
+}
+.op-1 {
+  opacity: 1;
+  transition:all 250ms ease-in-out
+}
+
+.product-inner .zoom {
+  opacity:0;
+  transform:scale(1.2);
+}
+.product-inner .zoom-in {
+  opacity:1;
+  transform:scale(1);
+  transition:all 250ms ease-in-out
+}
+
 #totop {
   display: none;
   position: fixed;
@@ -420,13 +438,6 @@ header .sticky {
   border-radius: 4px;
 }
 
-.op-0 {
-    opacity:0;
-}
-.op-1 {
-  opacity: 1;
-  transition:all 250ms ease-in-out
-}
 .slide-left {
   animation: 2s slide-left;
 }
