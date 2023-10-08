@@ -18,7 +18,7 @@
         <div id="slider_content-2" style="display:none;">
           <div class="row d-flex align-items-center">
             <div class="col-md-6 col-lg-6">
-              <h1>Ilch-Shop Layout</h1>
+              <h1>Ilch-Shop <span>Layout</span></h1>
               <div class="slide-fade-in">
                 <h4>Tassen uvm. stöbern sie unseren shop und bei fragen kontaktieren sie uns.</h4>
               </div>
