@@ -46,7 +46,7 @@ $(document).ready(function(){
       var pos = $(this).offset().top;
 
       var winTop = $(window).scrollTop();
-        if (pos < winTop + 800) {
+        if (pos < winTop + 750) {
           $(this).addClass("op-1");
         }
     });
@@ -67,4 +67,4 @@ $(document).ready(function(){
         }
     });
   });
-})
+});

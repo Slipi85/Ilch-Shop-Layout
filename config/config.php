@@ -19,6 +19,9 @@ class Config extends \Ilch\Config\Install
                 ['module' => 'user', 'controller' => 'panel'],
                 ['module' => 'forum'],
                 ['module' => 'guestbook'],
+            ],
+            'start' => [
+                ['module' => 'contact'],
             ]//only for example
         ],
         //'modulekey' => 'Name of Module'

@@ -7,64 +7,66 @@
         <link href="<?=$this->getLayoutUrl('style.css') ?>" rel="stylesheet">
         <?=$this->getCustomCSS() ?>
         <script src="<?=$this->getVendorUrl('twbs/bootstrap/dist/js/bootstrap.bundle.min.js') ?>"></script>
-        <script src="<?=$this->getLayoutUrl('js/shop.js') ?>" rel="stylesheet"></script>
     </head>
     <body>
-        <!-- Header beginn -->
-
-        <?php include('php/header_shop.php'); ?>
-
-        <!-- Header end -->
-
-        <!-- main beginn -->
-
-        <div id="main">
-
-          <!-- slider beginn -->
-
-          <?php include('php/slider.php'); ?>
-
-          <!-- slider end -->
-
-          <section class="partner pb-5 pt-5">
-            <div class="gaming">
-              <div class="partner-content fade-in">
-                <div class="row">
-                  <div class="col-6 col-sm-3 col-lg-3">
-                    <img src="<?=$this->getLayoutUrl('img/logo/adidas.png') ?>" alt="logo">
-                  </div>
-                  <div class="col-6 col-sm-3 col-lg-3">
-                    <img src="<?=$this->getLayoutUrl('img/logo/brandible.png') ?>" alt="logo">
-                  </div>
-                  <div class="col-6 col-sm-3 col-lg-3">
-                    <img src="<?=$this->getLayoutUrl('img/logo/adidas.png') ?>" alt="logo">
-                  </div>
-                  <div class="col-6 col-sm-3 col-lg-3">
-                    <img src="<?=$this->getLayoutUrl('img/logo/brandible.png') ?>" alt="logo">
-                  </div>
-                </div>
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light navbar-gaming bg-light d-none d-sm-block d-md-none">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="<?=$this->getUrl() ?>"><?=$this->getTrans('navigation') ?></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <?php
+                echo $this->getMenu(
+                    1,
+                    '<div class="card panel-gaming">
+                         <div class="panel-heading">%s</div>
+                            <div class="card-body">
+                                %c
+                            </div>
+                     </div>'
+                );
+                ?>
               </div>
             </div>
-          </section>
+          </nav>
 
-          <section class="product pb-5 pt-5 bg-light">
-            <div class="container">
-              <div class="product-inner">
-                <div class="row align-items-center">
-                  <div class="col-12 col-md-6 op-0">
-                    <h2>Unsere <span>Produkte</span></h2>
-                    sdfsd<br>
-                    sdsad<br>
-                    asdd
+          <div class="container">
+              <div class="gaming">
+                  <div id="carousel-generic" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carousel-generic" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carousel-generic" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carousel-generic" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="<?=$this->getLayoutUrl('img/slider/slider_1.jpg') ?>" alt="Slider 1">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="<?=$this->getLayoutUrl('img/slider/slider_2.jpg') ?>" alt="Slider 2">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="<?=$this->getLayoutUrl('img/slider/slider_3.jpg') ?>" alt="Slider 3">
+                          </div>
+                      </div>
+                      <button class="carousel-control-prev carousel-control left" type="button" data-bs-target="#carousel-generic" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next carousel-control right" type="button" data-bs-target="#carousel-generic" data-bs-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Next</span>
+                     </button>
+                  </div>
 
+                  <div class="gaming-name">
+                      Clanname
                   </div>
-                  <div class="col-12 col-md-6 zoom">
-                    <img src="<?=$this->getLayoutUrl('img/pic/pic3.png') ?>" alt="logo">
-                  </div>
-                </div>
               </div>
-            </div>
-          </section>
+          </div>
+        </header>
 
         <div class="container">
             <div class="gaming">
@@ -106,9 +108,7 @@
                 </div>
             </div>
         </div>
-      </div>
 
-<button onclick="totop()" id="totop" class="btn btn-outline-secondary"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
         <div class="footer">
             <div class="container">
                 <div class="gaming">
@@ -128,26 +128,7 @@
                 </div>
             </div>
         </div>
-        <!-- Modal content-->
-        <div class="modal fade" id="login" role="dialog" ata-bs-backdrop="static">
-            <div class="modal-dialog">
 
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title">Modal Header</h4>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <?=$this->getBox('user', 'login'); ?>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-
-            </div>
-          </div>
         <?=$this->getFooter() ?>
     </body>
 </html>
