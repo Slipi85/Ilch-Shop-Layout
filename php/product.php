@@ -1,4 +1,4 @@
-<section class="product pb-5 pt-5 bg-light">
+<section id="product" class="product pb-5 pt-5 bg-light">
   <div class="container">
     <div class="product-inner">
       <div class="row align-items-center">
@@ -13,6 +13,7 @@
             <li class="list-group-item card mb-3 pt-3 pb-3 op-0 shadow rounded"><i class="fa fa-check me-3 text-danger" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing ...</li>
             <li class="list-group-item card mb-3 pt-3 pb-3 op-0 shadow rounded"><i class="fa fa-check me-3 text-danger" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing ...</li>
           </ul>
+          <a href="#" class="op-0 btn btn-outline-dark" type="button">Zum Shop</a>
         </div>
         <div class="col-12 col-md-7 zoom">
           <img src="<?=$this->getLayoutUrl('img/pic/pic3.png') ?>" alt="logo">
