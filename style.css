@@ -434,13 +434,48 @@ header .sticky {
   transition:all 250ms ease-in-out
 }
 
-.contact-inner .icon .fa {
+.contact-inner .icon .fa{
     width:50px;
     height: 50px;
     text-align: center;
     font-size:25px;
     top:12px;
     position: relative
+}
+
+.info {
+    position: relative;
+}
+.info-header {
+    position: relative;
+    z-index:1000;
+}
+.info-inner {
+    position: relative;
+}
+.info-inner .fa {
+    font-size:25px;
+    width:20px;
+    height:20px;
+    top:1px;
+    position: relative;
+    text-align: center;
+}
+.bg {
+  background:url(img/bg/info_background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size: cover;
+    background-position: top center;
+    -webkit-background-position:top center;
+    -moz-background-position:top center;
+    -o-background-position:top center;
+    filter: grayscale(100);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #totop {

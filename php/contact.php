@@ -1,4 +1,4 @@
-<section class="contact bg-light pb-5 pt-5">
+<section id="contact" class="contact bg-light pb-5 pt-5">
   <div class="container">
     <div class="contact-inner row align-items-center">
       <div class="col-lg-6">

@@ -38,6 +38,12 @@
 
           <!-- product end -->
 
+          <!-- info beginn -->
+
+          <?php include('php/info.php'); ?>
+
+          <!-- info end -->
+
           <!-- contact beginn -->
 
           <?php include('php/contact.php'); ?>
