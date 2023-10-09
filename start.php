@@ -10,63 +10,32 @@
         <script src="<?=$this->getLayoutUrl('js/shop.js') ?>" rel="stylesheet"></script>
     </head>
     <body>
-        <!-- Header beginn -->
 
         <?php include('php/header_shop.php'); ?>
-
-        <!-- Header end -->
 
         <!-- main beginn -->
 
         <div id="main">
 
-          <!-- slider beginn -->
-
           <?php include('php/slider.php'); ?>
 
-          <!-- slider end -->
+          <?php include('php/block_1.php'); ?>
 
-          <!-- partner beginn -->
+          <?php include('php/block_2.php'); ?>
 
-          <?php include('php/partner.php'); ?>
+          <?php include('php/block_3.php'); ?>
 
-          <!-- partner end -->
+          <?php include('php/block_4.php'); ?>
 
-          <!-- product beginn -->
+          <?php include('php/block_5.php'); ?>
 
-          <?php include('php/product.php'); ?>
+          <?php include('php/block_6.php'); ?>
 
-          <!-- product end -->
-
-          <!-- service beginn -->
-
-          <?php include('php/service.php'); ?>
-
-          <!-- service end -->
-
-          <!-- team beginn -->
-
-          <?php include('php/team.php'); ?>
-
-          <!-- team end -->
-
-          <!-- info beginn -->
-
-          <?php include('php/info.php'); ?>
-
-          <!-- info end -->
-
-          <!-- contact beginn -->
-
-          <?php include('php/contact.php'); ?>
-
-          <!-- contact end -->
       </div>
 
-      <!-- footer beginn -->
+      <!-- main end -->
 
       <?php include('php/footer.php'); ?>
-
-      <!-- footer end -->
+      
     </body>
 </html>
