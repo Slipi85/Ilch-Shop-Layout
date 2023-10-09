@@ -1,3 +1,4 @@
+<!-- header_shop begin -->
 <header>
   <?php
   function dateDiffInDays($date1, $date2) {
@@ -5,7 +6,7 @@
       return abs(round($diff / 86400));
   }
   $date1 = date("d.m.Y");
-  $date2 = "17.10.2023";
+  $date2 = $this->getLayoutSetting('totopNavDatum');
   $dateDiff = dateDiffInDays($date1, $date2);
   if($dateDiff < 10) {
     $date = "0". $dateDiff;
@@ -19,11 +20,11 @@
         <div class="row">
           <div class="col-12 col-sm-6">
             <div class="top-nav-first-content d-flex align-items-center">
-              Exclusive Rabatte ! Dauer <span id="days"><?php printf($date);?></span> Days
+              <?=$this->getLayoutSetting('totopNavText')?> <span id="days"><?php printf($date);?></span> Days
             </div>
           </div>
           <div class="top-nav-second-content col-sm-6 text-end d-flex align-items-center justify-content-end">
-            <i class="far fa-envelope"></i> info@maxmustermann.de
+            <i class="far fa-envelope"></i> <?=$this->getLayoutSetting('totopNavMail')?>
           </div>
         </div>
       </div>
@@ -31,7 +32,7 @@
   </div>
   <nav id="navbar_top" class="navbar navbar-expand-md navbar-light bg-light pb-2 pt-2">
     <div class="container">
-      <a class="navbar-brand col-4 col-md-2" href="#"><img src="<?=$this->getLayoutUrl('img/logo/ilchShop_logo.png') ?>" alt="logo" class="w-50"></a>
+      <a class="navbar-brand col-4 col-md-2" href="#"><img src="<?=$this->getBaseUrl($this->getLayoutSetting('logo')) ?>" alt="logo" class="w-50"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -79,3 +80,4 @@
     </div>
   </nav>
 </header>
+<!-- header_shop end -->

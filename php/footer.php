@@ -13,7 +13,7 @@
                         </div>
                         <hr>
                         <div class="col-12 text-center">
-                            &copy; Ilch 2.0 Free Layout | CMS by <a href="http://www.ilch.de/">Ilch</a>
+                            &copy; Ilch 2.0 Shop-Layout | CMS by <a href="http://www.ilch.de/">Ilch</a>
                         </div>
                     </div>
                 </div>

@@ -18,8 +18,8 @@ body {
 header,
 #main,
 .container,
-.partner-content img,
-.partner .col-6 {
+.block_1-content img,
+.block_2 .col-6 {
      transition: all 250ms ease-in-out;
 }
 
@@ -336,7 +336,8 @@ header .sticky {
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
   animation: slideDown 0.35s ease-out;
   width: 100%;
-  top:-0px
+  top:-0px;
+  z-index: 10000;
 }
 .navbar .dropdown-menu>li>a {
     display: block;
@@ -400,18 +401,18 @@ header .sticky {
     height:25px
 }
 
-.partner {
+.block_1 {
     background:#ffff;
 }
-.partner-content img {
+.block_1-content img {
     filter: grayscale(100);
     max-width: 50% !important;
 }
-.partner-content img:hover {
+.block_1-content img:hover {
     filter:none;
 }
 @media (min-width:768px) {
-    .partner-content img {
+    .block_1-content img {
         max-width:150px !important;
     }
 }
@@ -423,17 +424,17 @@ header .sticky {
   transition:all 250ms ease-in-out
 }
 
-.product-inner .zoom {
+.block_2-inner .zoom {
   opacity:0;
   transform:scale(1.2);
 }
-.product-inner .zoom-in {
+.block_2-inner .zoom-in {
   opacity:1;
   transform:scale(1);
   transition:all 250ms ease-in-out
 }
 
-.contact-inner .icon .fa{
+.block_6-inner .icon .fa{
     width:50px;
     height: 50px;
     text-align: center;
@@ -442,17 +443,17 @@ header .sticky {
     position: relative
 }
 
-.info {
+.block_5 {
     position: relative;
 }
-.info-header {
+.inner-header {
     position: relative;
     z-index:1000;
 }
-.info-inner {
+.block_5-inner {
     position: relative;
 }
-.info-inner .fa {
+.block_5-inner .fa {
     font-size:25px;
     width:20px;
     height:20px;
@@ -477,28 +478,16 @@ header .sticky {
     left: 0;
 }
 
-.service .service-inner .accordion-button:not(.collapsed) {
+.block_3 .block_3-inner .accordion-button:not(.collapsed) {
     background-color:transparent;
     box-shadow: none;
     color:#c70f22;
 }
 
-.team .pic1 {
-    background-image:url(img/pic/pic-4.jpg);
-}
-.team .pic2 {
-    background-image:url(img/pic/pic-5.jpg);
-}
-.team .pic3 {
-    background-image:url(img/pic/pic-6.jpg);
-}
-.team .pic4 {
-    background-image:url(img/pic/pic-5.jpg);
-}
-.team .pic1,
-.team .pic2,
-.team .pic3,
-.team .pic4 {
+.block_4 .pic1,
+.block_4 .pic2,
+.block_4 .pic3,
+.block_4 .pic4 {
     min-height:260px;
     background-size:cover;
     background-position: top center;
