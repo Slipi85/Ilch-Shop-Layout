@@ -14,7 +14,7 @@
                     <?=$this->getTrans('bot') ?>*
                 </label>
                     <input type="text"
-                           class="form-control shadow rounded op-0"
+                           class="form-control shadow rounded op-0 border-0"
                            name="bot"
                            placeholder="Bot" />
             </div>
@@ -22,7 +22,7 @@
                 <label for="receiver" class="col-lg-2 control-label">
                     <?=$this->getTrans('receiver') ?>
                 </label>
-                    <select class="form-control shadow rounded" id="receiver" name="receiver">
+                    <select class="form-control shadow rounded border-0" id="receiver" name="receiver">
                         <?php foreach ($this->get('receivers') as $receiver): ?>
                             <option value="<?=$receiver->getId() ?>"><?=$this->escape($receiver->getName()) ?></option>
                         <?php endforeach; ?>
@@ -36,7 +36,7 @@
                 <label for="name" class="col-lg-2 control-label">
                 </label>
                     <input type="text"
-                           class="form-control shadow rounded op-0"
+                           class="form-control shadow rounded op-0 border-0"
                            id="name"
                            name="senderName"
                            value="<?=$this->escape($this->originalInput('senderName')) ?>"
@@ -46,7 +46,7 @@
                 <label for="email" class="col-lg-2 control-label">
                 </label>
                     <input type="email"
-                           class="form-control shadow rounded op-0"
+                           class="form-control shadow rounded op-0 border-0"
                            id="email"
                            name="senderEmail"
                            value="<?=$this->originalInput('senderEmail') ?>"
@@ -58,7 +58,7 @@
           <div class="col-lg-12 <?=$this->validation()->hasError('message') ? 'has-error' : '' ?>">
               <label for="message" class="col-lg-2 control-label">
               </label>
-                  <textarea class="form-control shadow rounded op-0"
+                  <textarea class="form-control shadow rounded op-0 border-0"
                             id="message"
                             name="message"
                             rows="5"

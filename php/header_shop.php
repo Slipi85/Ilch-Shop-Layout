@@ -15,14 +15,16 @@
   ?>
   <div class="top-nav bg-dark text-white">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-6">
-          <div class="top-nav-first-content d-flex align-items-center">
-            Exclusive Rabatte ! Dauer <span id="days"><?php printf($date);?></span> Days
+      <div class="gaming">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <div class="top-nav-first-content d-flex align-items-center">
+              Exclusive Rabatte ! Dauer <span id="days"><?php printf($date);?></span> Days
+            </div>
           </div>
-        </div>
-        <div class="top-nav-second-content col-sm-6 text-end d-flex align-items-center justify-content-end">
-          <i class="far fa-envelope"></i> info@maxmustermann.de
+          <div class="top-nav-second-content col-sm-6 text-end d-flex align-items-center justify-content-end">
+            <i class="far fa-envelope"></i> info@maxmustermann.de
+          </div>
         </div>
       </div>
     </div>
