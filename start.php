@@ -38,6 +38,18 @@
 
           <!-- product end -->
 
+          <!-- service beginn -->
+
+          <?php include('php/service.php'); ?>
+
+          <!-- service end -->
+
+          <!-- team beginn -->
+
+          <?php include('php/team.php'); ?>
+
+          <!-- team end -->
+
           <!-- info beginn -->
 
           <?php include('php/info.php'); ?>
@@ -51,46 +63,10 @@
           <!-- contact end -->
       </div>
 
-<button onclick="totop()" id="totop" class="btn btn-outline-secondary"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-        <div class="footer">
-            <div class="container">
-                <div class="gaming">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            &copy; Ilch 2.0 Free Layout | CMS by <a href="http://www.ilch.de/">Ilch</a>
-                        </div>
-                        <div class="col-xs-12 col-md-6 nav">
-                            <ul>
-                                <li><a href="<?=$this->getUrl() ?>">Home</a></li>
-                                <li><a href="<?=$this->getUrl(['module'=>'contact', 'controller'=>'index', 'action'=>'index']) ?>"><?=$this->getTrans('contact') ?></a></li>
-                                <li><a href="<?=$this->getUrl(['module'=>'imprint', 'controller'=>'index', 'action'=>'index']) ?>"><?=$this->getTrans('imprint') ?></a></li>
-                                <li><a href="<?=$this->getUrl(['module'=>'privacy', 'controller'=>'index', 'action'=>'index']) ?>"><?=$this->getTrans('privacy') ?></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal content-->
-        <div class="modal fade" id="login" role="dialog" ata-bs-backdrop="static">
-            <div class="modal-dialog">
+      <!-- footer beginn -->
 
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title">Modal Header</h4>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <?=$this->getBox('user', 'login'); ?>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
+      <?php include('php/footer.php'); ?>
 
-            </div>
-          </div>
-        <?=$this->getFooter() ?>
+      <!-- footer end -->
     </body>
 </html>

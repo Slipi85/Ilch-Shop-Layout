@@ -1,6 +1,7 @@
 <section class="slider">
   <div class="slider-content pt-lg pb-lg">
     <div class="slider-inner container">
+      <div class="gaming">
         <div id="slider_content-1">
           <div class="row d-flex align-items-center">
             <div class="col-md-6 col-lg-6">
@@ -28,12 +29,11 @@
             </div>
           </div>
         </div>
-        </div>
       </div>
-      <ul class="slider-nav list-unstyled d-none d-md-block" id="nav-slider">
-        <li><button id="1"class="btn btn-outline-warning mb-3 active" onclick="hide()"></button></li>
-        <li><button id="2"class="btn btn-outline-info mb-3" onclick="show()"></button></li>
-      </ul>
     </div>
   </div>
+  <ul class="slider-nav list-unstyled d-none d-md-block" id="nav-slider">
+    <li><button id="1"class="btn btn-outline-warning mb-3 active" onclick="hide()"></button></li>
+    <li><button id="2"class="btn btn-outline-info mb-3" onclick="show()"></button></li>
+  </ul>
 </section>

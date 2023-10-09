@@ -361,15 +361,14 @@ header .sticky {
 .pt-lg {
   padding-top: 2rem;
 }
-.slider-inner h1,
-.product .product-inner h1{
+.slider-inner h1{
     font-size:2.5rem;
     border:none;
     text-transform: uppercase;
     font-weight: bold;
 }
 .slider-inner h1 span,
-.product-inner h1 span {
+.inner-header h2 span {
     color:#c70f22;
 }
 .slider {
@@ -478,6 +477,33 @@ header .sticky {
     left: 0;
 }
 
+.service .service-inner .accordion-button:not(.collapsed) {
+    background-color:transparent;
+    box-shadow: none;
+    color:#c70f22;
+}
+
+.team .pic1 {
+    background-image:url(img/pic/pic-4.jpg);
+}
+.team .pic2 {
+    background-image:url(img/pic/pic-5.jpg);
+}
+.team .pic3 {
+    background-image:url(img/pic/pic-6.jpg);
+}
+.team .pic4 {
+    background-image:url(img/pic/pic-5.jpg);
+}
+.team .pic1,
+.team .pic2,
+.team .pic3,
+.team .pic4 {
+    min-height:260px;
+    background-size:cover;
+    background-position: top center;
+    width: 100%;
+}
 #totop {
   display: none;
   position: fixed;
