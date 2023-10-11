@@ -6,10 +6,10 @@
       <div class="block_2-inner">
         <div class="row align-items-center">
           <div class="col-12 col-md-5">
-            <div class="inner-header mb-3 mt-md-3">
+            <div class="inner-header mb-3 mt-md-3 pe-3 ps-3">
               <h2><?=$this->getLayoutSetting('block_2Header')?> <span><?=$this->getLayoutSetting('block_2HeaderSpan')?></span></h2>
             </div>
-            <ul class="list-group">
+            <ul class="list-group pe-3 ps-3">
               <li class="list-group-item card mb-3 pt-3 pb-3 op-0 shadow rounded border-0"><i class="<?=$this->getLayoutSetting('block_2List1icon')?> me-3 text-danger" aria-hidden="true"></i><?=$this->getLayoutSetting('block_2List1Text')?></li>
               <li class="list-group-item card mb-3 pt-3 pb-3 op-0 shadow rounded border-0"><i class="<?=$this->getLayoutSetting('block_2List2icon')?> me-3 text-danger" aria-hidden="true"></i><?=$this->getLayoutSetting('block_2List2Text')?></li>
               <li class="list-group-item card mb-3 pt-3 pb-3 op-0 shadow rounded border-0"><i class="<?=$this->getLayoutSetting('block_2List3icon')?> me-3 text-danger" aria-hidden="true"></i><?=$this->getLayoutSetting('block_2List3Text')?></li>
@@ -20,7 +20,7 @@
                 <li class="list-group-item card mb-3 pt-3 pb-3 op-0 shadow rounded border-0"><i class="<?=$this->getLayoutSetting('block_2List5icon')?> me-3 text-danger" aria-hidden="true"></i><?=$this->getLayoutSetting('block_2List5Text')?></li>
               <?php endif; ?>
             </ul>
-            <a href="#" class="op-0 btn btn-outline-dark" type="button">Zum Shop</a>
+            <div class="pe-3 ps-3"><a href="#" class="op-0 btn btn-outline-dark" type="button">Zum Shop</a></div>
           </div>
           <div class="col-12 col-md-7 zoom">
             <img src="<?=$this->getBaseUrl($this->getLayoutSetting('block_2img')) ?>" alt="logo">

@@ -15,12 +15,16 @@
   }
   ?>
   <div class="top-nav bg-dark text-white">
-    <div class="container">
+    <div class="container pe-3 ps-3">
       <div class="gaming">
         <div class="row">
           <div class="col-12 col-sm-6">
             <div class="top-nav-first-content d-flex align-items-center">
-              <?=$this->getLayoutSetting('totopNavText')?> <span id="days"><?php printf($date);?></span> Days
+              <?php if ($this->getLayoutSetting('totopNavAction') == '1') : ?>
+              <?=$this->getLayoutSetting('totopNavText')?> <span id="days"><?php printf($date);?></span> Tag
+            <?php else: ?>
+              <?=$this->getLayoutSetting('totopNavActionOff')?><span id="days">!</span>
+            <?php endif; ?>
             </div>
           </div>
           <div class="top-nav-second-content col-sm-6 text-end d-flex align-items-center justify-content-end">
@@ -31,7 +35,7 @@
     </div>
   </div>
   <nav id="navbar_top" class="navbar navbar-expand-md navbar-light bg-light pb-2 pt-2">
-    <div class="container">
+    <div class="container pe-3 ps-3">
       <a class="navbar-brand col-4 col-md-2" href="#"><img src="<?=$this->getBaseUrl($this->getLayoutSetting('logo')) ?>" alt="logo" class="w-50"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

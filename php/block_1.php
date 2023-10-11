@@ -1,6 +1,6 @@
 <?php if ($this->getLayoutSetting('block_1Switch') == '1') : ?>
   <!-- block_1 begin -->
-  <section class="block_1 pb-5 pt-5">
+  <section class="block_1 pb-5 pt-5 pe-3 ps-3">
     <div class="gaming">
       <div class="block_1-content fade-in">
         <div class="row">
