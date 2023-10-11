@@ -34,7 +34,7 @@ return [
     'sliderimg' => 'empfohlene maße 1400px X 900px',
 
   /* block_1 settings */
-    'block_1Settings' => '<b>Erster Block Einstellungen</b>',
+    'block_1Settings' => '<b>Block 1 Einstellungen</b>',
     'block_1Switch' => 'aktivieren/deaktivierten',
     'block_1img1' => '└─ Grafik1',
     'block_1img2' => '└─ Grafik2',
@@ -43,7 +43,7 @@ return [
     'block1img' => 'empfohlene maße 350px X 200px',
 
   /* block_2 settings */
-    'block_2Settings' => '<b>Zweiter Block Einstellungen</b>',
+    'block_2Settings' => '<b>Block 2 Einstellungen</b>',
     'block_2Switch' => 'aktivieren/deaktivierten',
     'block_2-Header' => '<b>Überschrifft</b>',
     'block_2Header' => '└─ Überschrifft',
@@ -71,7 +71,7 @@ return [
     'block_1img1' => '└─ Grafik1',
 
   /* block_3 settings */
-    'block_3Settings' => '<b>Dritter Block Einstellungen</b>',
+    'block_3Settings' => '<b>Block 3 Einstellungen</b>',
     'block_3Switch' => 'aktivieren/deaktivierten',
     'block_3-Header' => '<b>Überschrifft</b>',
     'block_3Header' => '└─ Überschrifft',
@@ -94,7 +94,7 @@ return [
     'block_3List4icon' => '└─ Icon',
 
   /* block_4 settings */
-    'block_4Settings' => '<b>Vierter Block Einstellungen</b>',
+    'block_4Settings' => '<b>Block 4 Einstellungen</b>',
     'block_4Switch' => 'aktivieren/deaktivierten',
     'block_4-Header' => '<b>Überschrifft</b>',
     'block_4Header' => '└─ Überschrifft',
@@ -120,7 +120,7 @@ return [
     'block4img' => 'aktuelle maße 640px X 424px',
 
   /* block_5 settings */
-    'block_5Settings' => '<b>Fünfte Block Einstellungen</b>',
+    'block_5Settings' => '<b>Block 5 Einstellungen</b>',
     'block_5Switch' => 'aktivieren/deaktivierten',
     'block_5-Header' => '<b>Überschrifft</b>',
     'block_5Header' => '└─ Überschrifft',
@@ -140,7 +140,7 @@ return [
     'block_4block4Text' => '└─ Text',
 
   /* block_6 settings */
-    'block_6Settings' => '<b>Sechste Block Einstellungen</b>',
+    'block_6Settings' => '<b>Block 6 Einstellungen</b>',
     'block_6Header' => '└─ Überschrifft',
     'block_6HeaderSpan' => '└─ Überschrifft Span',
     'block_6list1' => '<b>Punkt1</b>',
@@ -156,6 +156,44 @@ return [
     'block_6list3Header' => '└─ Überschrifft',
     'block_6list3Text' => '└─ Text',
 
+    /* block_7 settings */
+      'block_7Settings' => '<b>Block 7 Einstellungen</b>',
+      'block_7Switch' => 'aktivieren/deaktivierten',
+      'block_7block1' => '<b>Punkt1</b>',
+      'block_7block1img' => '└─ Grafik',
+      'block_7block1header' => '└─ Überschrifft',
+      'block_7block1price' => '└─ Preis',
+      'block_7block1cordonSwitch' => 'aktivieren/deaktivierten',
+      'cordon' => 'Hier können sie den Status des Produkt aktivieren',
+      'block_7block1Cordon' => '└─ Text',
+      'block_7block1cordonBg' => 'aktivieren/deaktivierten',
+      'cordonbg' => 'Bei <b>AN</b> Roter Hindergrund, bei <b>AUS</b> Hellblauer Hintergrund',
+      'block_7block2' => '<b>Punkt2</b>',
+      'block_7block2img' => '└─ Grafik',
+      'block_7block2header' => '└─ Überschrifft',
+      'block_7block2price' => '└─ Preis',
+      'block_7block2cordonSwitch' => 'aktivieren/deaktivierten',
+      'block_7block2Cordon' => '└─ Text',
+      'block_7block2cordonBg' => 'aktivieren/deaktivierten',
+      'block_7block3' => '<b>Punkt2</b>',
+      'block_7block3img' => '└─ Grafik',
+      'block_7block3header' => '└─ Überschrifft',
+      'block_7block3price' => '└─ Preis',
+      'block_7block3cordonSwitch' => 'aktivieren/deaktivierten',
+      'block_7block3Cordon' => '└─ Text',
+      'block_7block3cordonBg' => 'aktivieren/deaktivierten',
+      'block_7block4' => '<b>Punkt2</b>',
+      'block_7block4img' => '└─ Grafik',
+      'block_7block4header' => '└─ Überschrifft',
+      'block_7block4price' => '└─ Preis',
+      'block_7block4cordonSwitch' => 'aktivieren/deaktivierten',
+      'block_7block4Cordon' => '└─ Text',
+      'block_7block4cordonBg' => 'aktivieren/deaktivierten',
+
+    /* block_8 settings */
+      'block_8Settings' => '<b>Block 8 Einstellungen</b>',
+      'block_8Switch' => 'aktivieren/deaktivierten',
+      'block_8text' => '<b>Text</b>',
 
     'home' => 'Home',
     'hello' => 'Hallo',

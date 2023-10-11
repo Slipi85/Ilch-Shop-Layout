@@ -26,7 +26,7 @@
 <section class="block_7 pt-5 pb-5 bg-light">
   <div class="container">
     <div class="gaming">
-      <div class="block_7-inner">
+      <div class="block_7-inner pe-3 ps-3">
         <div class="row">
           <div class="col-md-3 op-0">
             <div class="card shadow border-0">
@@ -85,5 +85,5 @@
     </div>
   </div>
 </section>
-<!-- end block_7
+<!-- end block_7 -->
 <?php endif; ?>

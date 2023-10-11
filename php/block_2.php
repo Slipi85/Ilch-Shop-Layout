@@ -20,7 +20,7 @@
                 <li class="list-group-item card mb-3 pt-3 pb-3 op-0 shadow rounded border-0"><i class="<?=$this->getLayoutSetting('block_2List5icon')?> me-3 text-danger" aria-hidden="true"></i><?=$this->getLayoutSetting('block_2List5Text')?></li>
               <?php endif; ?>
             </ul>
-            <div class="pe-3 ps-3"><a href="#" class="op-0 btn btn-outline-dark" type="button">Zum Shop</a></div>
+            <div class="pe-3 ps-3"><a href="<?=$this->getBaseUrl('/index.php/shop/index/index') ?>" class="op-0 btn btn-outline-dark" type="button">Zum Shop</a></div>
           </div>
           <div class="col-12 col-md-7 zoom">
             <img src="<?=$this->getBaseUrl($this->getLayoutSetting('block_2img')) ?>" alt="logo">
