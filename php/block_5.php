@@ -10,9 +10,9 @@
             <h2><?=$this->getLayoutSetting('block_5Header')?> <span><?=$this->getLayoutSetting('block_5HeaderSpan')?></span></h2>
           </div>
           <div class="info-body text-center mt-5">
-            <button href="<?=$this->getLayoutSetting('block_5link1Link')?>" target="_blank" class="rounded-circle me-3 ms-3 btn btn-light shadow" type="button"><i class="<?=$this->getLayoutSetting('block_5link1Icon')?> text-danger" aria-hidden="true"></i></button>
-            <button href="<?=$this->getLayoutSetting('block_5link2Link')?>" target="_blank" class="rounded-circle me-3 ms-3 btn btn-light shadow"><i class="<?=$this->getLayoutSetting('block_5link2Icon')?> text-danger" aria-hidden="true"></i></button>
-            <button href="<?=$this->getLayoutSetting('block_5link3Link')?>" target="_blank" class="rounded-circle me-3 ms-3 btn btn-light shadow"><i class="<?=$this->getLayoutSetting('block_5link3Icon')?> text-danger" aria-hidden="true"></i></button>
+            <a href="<?=$this->getLayoutSetting('block_5link1Link')?>" target="_blank" class="rounded-circle me-3 ms-3 btn btn-light shadow" type="button"><i class="<?=$this->getLayoutSetting('block_5link1Icon')?> text-danger" aria-hidden="true"></i></a>
+            <a href="<?=$this->getLayoutSetting('block_5link2Link')?>" target="_blank" class="rounded-circle me-3 ms-3 btn btn-light shadow"><i class="<?=$this->getLayoutSetting('block_5link2Icon')?> text-danger" aria-hidden="true"></i></a>
+            <a href="<?=$this->getLayoutSetting('block_5link3Link')?>" target="_blank" class="rounded-circle me-3 ms-3 btn btn-light shadow"><i class="<?=$this->getLayoutSetting('block_5link3Icon')?> text-danger" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>

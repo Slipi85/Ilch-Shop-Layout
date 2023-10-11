@@ -40,3 +40,5 @@
             </div>
           </div>
         <?=$this->getFooter() ?>
+      </body>
+  </html>

@@ -2,10 +2,10 @@
 <!-- block_3 begin -->
 <section class="block_3 bg-light">
   <div class="gaming">
-    <div class="container pb-5 pt-5">
+    <div class="container pb-5 pt-5 pe-3 ps-3">
       <div class="block_3-inner">
         <div class="row">
-          <div class="inner-header mb-3 mt-md-3">
+          <div class="inner-header mb-3 mt-md-3 pe-3 ps-3">
             <h2><?=$this->getLayoutSetting('block_3Header')?> <span><?=$this->getLayoutSetting('block_3HeaderSpan')?></span></h2>
           </div>
           <div class="col-lg-6">

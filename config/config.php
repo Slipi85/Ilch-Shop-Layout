@@ -35,15 +35,25 @@ class Config extends \Ilch\Config\Install
             'topnavSettings' => [
                 'type' => 'separator',
             ],
+            'totopNavAction' => [
+                'type' => 'flipswitch',
+                'default' => '1',
+                'description' => '',
+                ],
             'totopNavText' => [
                 'type' => 'text',
                 'default' => 'Exclusive Rabatte ! Dauer',
                 'description' => '',
                 ],
+            'totopNavActionOff' => [
+                'type' => 'text',
+                'default' => 'Zurzeit gibt es keine Exclusive Tage',
+                'description' => 'actionOff',
+                ],
             'totopNavDatum' => [
                 'type' => 'text',
                 'default' => '17.10.2023',
-                'description' => '',
+                'description' => 'date',
                 ],
             'totopNavMail' => [
                 'type' => 'text',
@@ -53,6 +63,11 @@ class Config extends \Ilch\Config\Install
             'sliderSettings' => [
                 'type' => 'separator',
             ],
+            'slider-Header' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
             'sliderHeader' => [
                 'type' => 'text',
                 'default' => 'Ilch-Shop',
@@ -69,15 +84,14 @@ class Config extends \Ilch\Config\Install
                 'description' => '',
                 ],
             'slider1text' => [
-                'type' => 'text',
-                'default' => 'Bei uns finden sie was das herz begehrt,
-                zum Beispiel Shirts oder...',
+                'type' => 'ckeditorhtml',
+                'default' => 'Bei uns finden sie was das herz begehrt, zum Beispiel Shirts oder...',
                 'description' => '',
                 ],
             'slider1Img' => [
                 'type' => 'mediaselection',
                 'default' => 'application/layouts/shoplayout/img/pic/pic1.png',
-                'description' => 'span',
+                'description' => 'sliderimg',
                 ],
             'slider2' => [
                 'type' => '',
@@ -85,19 +99,14 @@ class Config extends \Ilch\Config\Install
                 'description' => '',
                 ],
             'slider2text' => [
-                'type' => 'text',
+                'type' => 'ckeditorhtml',
                 'default' => 'Tassen uvm. stöbern sie unseren shop und bei fragen kontaktieren sie uns.',
                 'description' => '',
                 ],
             'slider2Img' => [
                 'type' => 'mediaselection',
                 'default' => 'application/layouts/shoplayout/img/pic/pic2.png',
-                'description' => 'span',
-                ],
-            'sliderText' => [
-                'type' => 'text',
-                'default' => 'Home of Legends and Heros',
-                'description' => '',
+                'description' => 'sliderimg',
                 ],
             'block_1Settings' => [
                 'type' => 'separator',
@@ -110,22 +119,22 @@ class Config extends \Ilch\Config\Install
             'block_1img1' => [
                 'type' => 'mediaselection',
                 'default' => 'application/layouts/shoplayout/img/logo/ilchShop_logo.png',
-                'description' => 'span',
+                'description' => 'block1img',
                 ],
             'block_1img2' => [
                 'type' => 'mediaselection',
                 'default' => 'application/layouts/shoplayout/img/logo/ilchShop_logo.png',
-                'description' => 'span',
+                'description' => 'block1img',
                 ],
             'block_1img3' => [
                 'type' => 'mediaselection',
                 'default' => 'application/layouts/shoplayout/img/logo/ilchShop_logo.png',
-                'description' => 'span',
+                'description' => 'block1img',
                 ],
             'block_1img4' => [
                 'type' => 'mediaselection',
                 'default' => 'application/layouts/shoplayout/img/logo/ilchShop_logo.png',
-                'description' => 'span',
+                'description' => 'block1img',
                 ],
             'block_2Settings' => [
                 'type' => 'separator',
@@ -133,6 +142,11 @@ class Config extends \Ilch\Config\Install
             'block_2Switch' => [
                 'type' => 'flipswitch',
                 'default' => '1',
+                'description' => '',
+                ],
+            'block_2-Header' => [
+                'type' => '',
+                'default' => '',
                 'description' => '',
                 ],
             'block_2Header' => [
@@ -145,7 +159,12 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Produkte',
                 'description' => 'span',
                 ],
-            'block_2list' => [
+            'block_2img' => [
+                'type' => 'mediaselection',
+                'default' => 'application/layouts/shoplayout/img/pic/pic3.png',
+                'description' => 'block2img',
+                ],
+            'block_2list1' => [
                 'type' => '',
                 'default' => '',
                 'description' => '',
@@ -156,8 +175,13 @@ class Config extends \Ilch\Config\Install
                 'description' => 'fa-icon',
                 ],
             'block_2List1Text' => [
-                'type' => 'text',
+                'type' => 'ckeditorhtml',
                 'default' => 'Lorem Ipsum is simply dummy text of the printing ...',
+                'description' => '',
+                ],
+            'block_2list2' => [
+                'type' => '',
+                'default' => '',
                 'description' => '',
                 ],
             'block_2List2icon' => [
@@ -166,8 +190,13 @@ class Config extends \Ilch\Config\Install
                 'description' => 'fa-icon',
                 ],
             'block_2List2Text' => [
-                'type' => 'text',
+                'type' => 'ckeditorhtml',
                 'default' => 'Lorem Ipsum is simply dummy text of the printing ...',
+                'description' => '',
+                ],
+            'block_2list3' => [
+                'type' => '',
+                'default' => '',
                 'description' => '',
                 ],
             'block_2List3icon' => [
@@ -176,8 +205,13 @@ class Config extends \Ilch\Config\Install
                 'description' => 'fa-icon',
                 ],
             'block_2List3Text' => [
-                'type' => 'text',
+                'type' => 'ckeditorhtml',
                 'default' => 'Lorem Ipsum is simply dummy text of the printing ...',
+                'description' => '',
+                ],
+            'block_2list4' => [
+                'type' => '',
+                'default' => '',
                 'description' => '',
                 ],
             'block_2List4Switch' => [
@@ -191,8 +225,13 @@ class Config extends \Ilch\Config\Install
                 'description' => 'fa-icon',
                 ],
             'block_2List4Text' => [
-                'type' => 'text',
+                'type' => 'ckeditorhtml',
                 'default' => 'Lorem Ipsum is simply dummy text of the printing ...',
+                'description' => '',
+                ],
+            'block_2list5' => [
+                'type' => '',
+                'default' => '',
                 'description' => '',
                 ],
             'block_2List5Switch' => [
@@ -206,14 +245,9 @@ class Config extends \Ilch\Config\Install
                 'description' => 'fa-icon',
                 ],
             'block_2List5Text' => [
-                'type' => 'text',
+                'type' => 'ckeditorhtml',
                 'default' => 'Lorem Ipsum is simply dummy text of the printing ...',
                 'description' => '',
-                ],
-            'block_2img' => [
-                'type' => 'mediaselection',
-                'default' => 'application/layouts/shoplayout/img/pic/pic3.png',
-                'description' => 'span',
                 ],
             'block_3Settings' => [
                 'type' => 'separator',
@@ -233,7 +267,7 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Service',
                 'description' => 'span',
                 ],
-            'block_3List' => [
+            'block_3List1' => [
                 'type' => '',
                 'default' => '',
                 'description' => '',
@@ -253,6 +287,11 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type und scrambled it to make a type specimen book',
                 'description' => '',
                 ],
+            'block_3List2' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
             'block_3List2Header' => [
                 'type' => 'text',
                 'default' => 'Lorem Ipsum',
@@ -268,6 +307,11 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type und scrambled it to make a type specimen book',
                 'description' => '',
                 ],
+            'block_3List3' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
             'block_3List3Header' => [
                 'type' => 'text',
                 'default' => 'Lorem Ipsum',
@@ -281,6 +325,11 @@ class Config extends \Ilch\Config\Install
             'block_3List3Text' => [
                 'type' => 'ckeditorhtml',
                 'default' => 'Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type und scrambled it to make a type specimen book',
+                'description' => '',
+                ],
+            'block_3List4' => [
+                'type' => '',
+                'default' => '',
                 'description' => '',
                 ],
             'block_3List4Header' => [
@@ -306,6 +355,11 @@ class Config extends \Ilch\Config\Install
                 'default' => '1',
                 'description' => '',
                 ],
+            'block_4-Header' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
             'block_4Header' => [
                 'type' => 'text',
                 'default' => 'Unsere',
@@ -316,7 +370,7 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Team',
                 'description' => 'span',
                 ],
-            'block_4block' => [
+            'block_4block1' => [
                 'type' => '',
                 'default' => '',
                 'description' => '',
@@ -324,7 +378,7 @@ class Config extends \Ilch\Config\Install
             'block_4block1img' => [
                 'type' => 'mediaselection',
                 'default' => 'application/layouts/shoplayout/img/pic/pic-4.jpg',
-                'description' => 'span',
+                'description' => 'block4img',
                 ],
             'block_4block1Header' => [
                 'type' => 'text',
@@ -336,10 +390,15 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus vehicula placerat. Suspendisse sit amet condimentum urna. Phasellus suscipit, tortor.',
                 'description' => '',
                 ],
+            'block_4block2' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
             'block_4block2img' => [
                 'type' => 'mediaselection',
                 'default' => 'application/layouts/shoplayout/img/pic/pic-5.jpg',
-                'description' => 'span',
+                'description' => 'block4img',
                 ],
             'block_4block2Header' => [
                 'type' => 'text',
@@ -351,10 +410,20 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus vehicula placerat. Suspendisse sit amet condimentum urna. Phasellus suscipit, tortor.',
                 'description' => '',
                 ],
+            'block_4block3Switch' => [
+                'type' => 'flipswitch',
+                'default' => '1',
+                'description' => '',
+                ],
+            'block_4block3' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
             'block_4block3img' => [
                 'type' => 'mediaselection',
                 'default' => 'application/layouts/shoplayout/img/pic/pic-6.jpg',
-                'description' => 'span',
+                'description' => 'block4img',
                 ],
             'block_4block3Header' => [
                 'type' => 'text',
@@ -366,10 +435,20 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus vehicula placerat. Suspendisse sit amet condimentum urna. Phasellus suscipit, tortor.',
                 'description' => '',
                 ],
+            'block_4block4Switch' => [
+                'type' => 'flipswitch',
+                'default' => '1',
+                'description' => '',
+                ],
+            'block_4block4' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
             'block_4block4img' => [
                 'type' => 'mediaselection',
                 'default' => 'application/layouts/shoplayout/img/pic/pic-7.jpg',
-                'description' => 'span',
+                'description' => 'block4img',
                 ],
             'block_4block4Header' => [
                 'type' => 'text',
@@ -389,6 +468,11 @@ class Config extends \Ilch\Config\Install
                 'default' => '1',
                 'description' => '',
                 ],
+            'block_5-Header' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
             'block_5Header' => [
                 'type' => 'text',
                 'default' => 'Soziale',
@@ -399,7 +483,7 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Kontakte',
                 'description' => 'span',
                 ],
-            'block_5link' => [
+            'block_5link1' => [
                 'type' => '',
                 'default' => '',
                 'description' => '',
@@ -414,6 +498,11 @@ class Config extends \Ilch\Config\Install
                 'default' => 'https://www.facebook.com/',
                 'description' => '',
                 ],
+            'block_5link2' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
             'block_5link2Icon' => [
                 'type' => 'text',
                 'default' => 'fa fa-twitter',
@@ -422,6 +511,11 @@ class Config extends \Ilch\Config\Install
             'block_5link2Link' => [
                 'type' => 'text',
                 'default' => 'https://twitter.com/',
+                'description' => '',
+                ],
+            'block_5link3' => [
+                'type' => '',
+                'default' => '',
                 'description' => '',
                 ],
             'block_5link3Icon' => [
@@ -447,7 +541,7 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Uns',
                 'description' => 'span',
                 ],
-            'block_6' => [
+            'block_6list1' => [
                 'type' => '',
                 'default' => '',
                 'description' => '',
@@ -460,11 +554,16 @@ class Config extends \Ilch\Config\Install
             'block_6list1Header' => [
                 'type' => 'text',
                 'default' => 'Adresse:',
-                'description' => 'fa-icon',
+                'description' => '',
                 ],
             'block_6list1Text' => [
                 'type' => 'ckeditorhtml',
                 'default' => '1234 Max, Maxmusterman Str.1',
+                'description' => '',
+                ],
+            'block_6list2' => [
+                'type' => '',
+                'default' => '',
                 'description' => '',
                 ],
             'block_6list2Icon' => [
@@ -482,6 +581,11 @@ class Config extends \Ilch\Config\Install
                 'default' => '+43 1/123456',
                 'description' => '',
               ],
+            'block_6list3' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
             'block_6list3Icon' => [
                 'type' => 'text',
                 'default' => 'fa fa-paper-plane',
@@ -496,6 +600,159 @@ class Config extends \Ilch\Config\Install
                 'type' => 'text',
                 'default' => 'max@mustermann.at',
                 'description' => '',
+                ],
+            'block_7Settings' => [
+                'type' => 'separator',
+            ],
+            'block_7Switch' => [
+                'type' => 'flipswitch',
+                'default' => '1',
+                'description' => '',
+                ],
+            'block_7block1' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
+            'block_7block1img' => [
+                'type' => 'mediaselection',
+                'default' => 'application/layouts/shoplayout/img/pic/muster_capblack1.jpg',
+                'description' => 'block7img',
+                ],
+            'block_7block1header' => [
+                'type' => 'text',
+                'default' => 'Cap Schwarz',
+                'description' => '',
+                ],
+            'block_7block1price' => [
+                'type' => 'text',
+                'default' => '€ 19',
+                'description' => '',
+                ],
+            'block_7block1Switch' => [
+                'type' => 'flipswitch',
+                'default' => '1',
+                'description' => 'sliderimg',
+                ],
+            'block_7block1Cordon' => [
+                'type' => 'text',
+                'default' => 'Verfügbarkeit',
+                'description' => '',
+                ],
+            'block_7block1cordonSwitch' => [
+                'type' => 'flipswitch',
+                'default' => '1',
+                'description' => 'cordon',
+                ],
+            'block_7block1cordonBg' => [
+                'type' => 'flipswitch',
+                'default' => '1',
+                'description' => 'cordon',
+                ],
+            'block_7block2' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
+            'block_7block2img' => [
+                'type' => 'mediaselection',
+                'default' => 'application/layouts/shoplayout/img/pic/muster_capblack1.jpg',
+                'description' => 'block7img',
+                ],
+            'block_7block2header' => [
+                'type' => 'text',
+                'default' => 'Cap Schwarz',
+                'description' => '',
+                ],
+            'block_7block2price' => [
+                'type' => 'text',
+                'default' => '€ 25',
+                'description' => '',
+                ],
+            'block_7block2cordonSwitch' => [
+                'type' => 'flipswitch',
+                'default' => '0',
+                'description' => '',
+                ],
+            'block_7block2Cordon' => [
+                'type' => 'text',
+                'default' => '',
+                'description' => '',
+                ],
+            'block_7block2cordonBg' => [
+                'type' => 'flipswitch',
+                'default' => '0',
+                'description' => 'cordon',
+                ],
+            'block_7block3' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
+            'block_7block3img' => [
+                'type' => 'mediaselection',
+                'default' => 'application/layouts/shoplayout/img/pic/muster_capblack1.jpg',
+                'description' => 'block7img',
+                ],
+            'block_7block3header' => [
+                'type' => 'text',
+                'default' => 'Cap Schwarz',
+                'description' => '',
+                ],
+            'block_7block3price' => [
+                'type' => 'text',
+                'default' => '€ 20',
+                'description' => '',
+                ],
+            'block_7block3cordonSwitch' => [
+                'type' => 'flipswitch',
+                'default' => '1',
+                'description' => '',
+                ],
+            'block_7block3Cordon' => [
+                'type' => 'text',
+                'default' => 'Bestseller',
+                'description' => '',
+                ],
+            'block_7block3cordonBg' => [
+                'type' => 'flipswitch',
+                'default' => '1',
+                'description' => 'cordon',
+                ],
+            'block_7block4' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
+                ],
+            'block_7block4img' => [
+                'type' => 'mediaselection',
+                'default' => 'application/layouts/shoplayout/img/pic/muster_capblack1.jpg',
+                'description' => 'block7img',
+                ],
+            'block_7block4header' => [
+                'type' => 'text',
+                'default' => 'Cap Schwarz',
+                'description' => '',
+                ],
+            'block_7block4price' => [
+                'type' => 'text',
+                'default' => '€ 19',
+                'description' => '',
+                ],
+            'block_7block4cordonSwitch' => [
+                'type' => 'flipswitch',
+                'default' => '0',
+                'description' => '',
+                ],
+            'block_7block4Cordon' => [
+                'type' => 'text',
+                'default' => '',
+                'description' => '',
+                ],
+            'block_7block4cordonBg' => [
+                'type' => 'flipswitch',
+                'default' => '0',
+                'description' => 'cordon',
                 ],
         ],
         //'modulekey' => 'Name of Module'

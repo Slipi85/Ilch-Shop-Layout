@@ -1,6 +1,6 @@
 <!-- slider begin -->
 <section class="slider">
-  <div class="slider-content pt-lg pb-lg">
+  <div class="slider-content pt-lg pb-lg pe-3 ps-3">
     <div class="slider-inner container">
       <div class="gaming">
         <div id="slider_content-1">

@@ -1,7 +1,7 @@
 <section id="block_6" class="block_6 bg-light pb-5 pt-5">
   <div class="container">
     <div class="gaming">
-      <div class="block_6-inner row align-items-center">
+      <div class="block_6-inner row align-items-center pe-3 ps-3">
         <div class="col-lg-6">
           <div class="info-wrap w-100">
             <div class="mb-4 mt-md-4 inner-header"><h2><?=$this->getLayoutSetting('block_6Header')?> <span><?=$this->getLayoutSetting('block_6HeaderSpan')?></h2></span></div>
