@@ -1,7 +1,7 @@
 
       <?php include('php/head.php'); ?>
 
-        <?php include('php/header_shop.php'); ?>
+        <?php include('php/header.php'); ?>
 
         <!-- main beginn -->
 
@@ -16,6 +16,8 @@
           <?php include('php/block_7.php'); ?>
 
           <?php include('php/block_3.php'); ?>
+
+          <?php include('php/block_8.php'); ?>
 
           <?php include('php/block_4.php'); ?>
 

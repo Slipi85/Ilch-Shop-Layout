@@ -22,6 +22,9 @@ class Config extends \Ilch\Config\Install
             ],
             'start' => [
                 ['module' => 'contact'],
+            ],
+            'shop_index' => [
+                ['module' => 'shop'],
             ]//only for example
         ],
         'settings' => [
@@ -629,25 +632,20 @@ class Config extends \Ilch\Config\Install
                 'default' => '€ 19',
                 'description' => '',
                 ],
-            'block_7block1Switch' => [
+            'block_7block1cordonSwitch' => [
                 'type' => 'flipswitch',
                 'default' => '1',
-                'description' => 'sliderimg',
+                'description' => 'cordon',
                 ],
             'block_7block1Cordon' => [
                 'type' => 'text',
                 'default' => 'Verfügbarkeit',
                 'description' => '',
                 ],
-            'block_7block1cordonSwitch' => [
-                'type' => 'flipswitch',
-                'default' => '1',
-                'description' => 'cordon',
-                ],
             'block_7block1cordonBg' => [
                 'type' => 'flipswitch',
                 'default' => '1',
-                'description' => 'cordon',
+                'description' => 'cordonbg',
                 ],
             'block_7block2' => [
                 'type' => '',
@@ -672,7 +670,7 @@ class Config extends \Ilch\Config\Install
             'block_7block2cordonSwitch' => [
                 'type' => 'flipswitch',
                 'default' => '0',
-                'description' => '',
+                'description' => 'cordon',
                 ],
             'block_7block2Cordon' => [
                 'type' => 'text',
@@ -682,7 +680,7 @@ class Config extends \Ilch\Config\Install
             'block_7block2cordonBg' => [
                 'type' => 'flipswitch',
                 'default' => '0',
-                'description' => 'cordon',
+                'description' => 'cordonbg',
                 ],
             'block_7block3' => [
                 'type' => '',
@@ -707,7 +705,7 @@ class Config extends \Ilch\Config\Install
             'block_7block3cordonSwitch' => [
                 'type' => 'flipswitch',
                 'default' => '1',
-                'description' => '',
+                'description' => 'cordon',
                 ],
             'block_7block3Cordon' => [
                 'type' => 'text',
@@ -717,7 +715,7 @@ class Config extends \Ilch\Config\Install
             'block_7block3cordonBg' => [
                 'type' => 'flipswitch',
                 'default' => '1',
-                'description' => 'cordon',
+                'description' => 'cordonbg',
                 ],
             'block_7block4' => [
                 'type' => '',
@@ -742,7 +740,7 @@ class Config extends \Ilch\Config\Install
             'block_7block4cordonSwitch' => [
                 'type' => 'flipswitch',
                 'default' => '0',
-                'description' => '',
+                'description' => 'cordon',
                 ],
             'block_7block4Cordon' => [
                 'type' => 'text',
@@ -752,7 +750,20 @@ class Config extends \Ilch\Config\Install
             'block_7block4cordonBg' => [
                 'type' => 'flipswitch',
                 'default' => '0',
-                'description' => 'cordon',
+                'description' => 'cordonbg',
+                ],
+            'block_8Settings' => [
+                'type' => 'separator',
+            ],
+            'block_8Switch' => [
+                'type' => 'flipswitch',
+                'default' => '1',
+                'description' => '',
+                ],
+            'block_8text' => [
+                'type' => 'text',
+                'default' => 'Abonniere unseren Newsletter',
+                'description' => '',
                 ],
         ],
         //'modulekey' => 'Name of Module'
