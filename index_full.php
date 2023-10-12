@@ -9,7 +9,7 @@
         <div class="container index_full pt-5">
             <div class="gaming">
                 <div class="row">
-                    <div class="d-none d-md-block col-md-3 col-lg-2">
+                    <div class="col-12 col-md-3 col-lg-3">
                       <?php
                       echo $this->getMenu(
                           1,
@@ -22,7 +22,7 @@
                       );
                       ?>
                     </div>
-                    <div class="col-xs-12 col-md-3 col-lg-10">
+                    <div class="col-12 col-md-9 col-lg-19">
                       <div class="card card-default border-0">
                           <div class="card-body">
                               <?=$this->getContent() ?>
