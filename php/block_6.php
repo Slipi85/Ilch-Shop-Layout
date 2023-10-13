@@ -1,4 +1,4 @@
-<section id="block_6" class="block_6 bg-light pb-5 pt-5">
+<section id="block_6" class="block_6 pb-5 pt-5">
   <div class="container">
     <div class="gaming">
       <div class="block_6-inner row align-items-center pe-3 ps-3">
@@ -37,4 +37,8 @@
       </div>
     </div>
   </div>
+  <style>
+  .block_6 {background:<?=$this->getLayoutSetting('block_6Bg')?>);color:<?=$this->getLayoutSetting('block_6TextColor')?>;}
+  .block_6 i {color:<?=$this->getLayoutSetting('block_6IconColor')?>;}
+  </style>
 </section>

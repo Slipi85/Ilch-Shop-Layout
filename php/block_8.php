@@ -1,6 +1,6 @@
 <?php if ($this->getLayoutSetting('block_8Switch') == '1') : ?>
 <!-- begin block_8 -->
-<section class="block_8 pt-5 pb-5 bg-body">
+<section class="block_8 pt-5 pb-5">
   <div class="container">
     <div class="gaming">
       <div class="block_8-inner pe-3 ps-3">
@@ -15,6 +15,9 @@
       </div>
     </div>
   </div>
+  <style>
+  .block_8 {background:<?=$this->getLayoutSetting('block_8Bg')?>;color:<?=$this->getLayoutSetting('block_8TextColor')?>;}
+  </style>
 </section>
 <!-- end block_8 -->
 <?php endif; ?>

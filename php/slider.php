@@ -36,5 +36,8 @@
     <li><button id="1"class="btn btn-outline-warning mb-3 active" onclick="hide()"></button></li>
     <li><button id="2"class="btn btn-outline-info mb-3" onclick="show()"></button></li>
   </ul>
+  <style>
+  .slider {background:url(<?=$this->getBaseUrl($this->getLayoutSetting('sliderBg')) ?>)}
+  </style>
 </section>
 <!-- slider end -->
