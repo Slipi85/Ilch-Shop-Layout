@@ -23,7 +23,7 @@
   ?>
 <!-- begin block_7 -->
 
-<section class="block_7 pt-5 pb-5 bg-light">
+<section class="block_7 pt-5 pb-5">
   <div class="container">
     <div class="gaming">
       <div class="block_7-inner pe-3 ps-3">
@@ -84,6 +84,10 @@
       </div>
     </div>
   </div>
+  <style>
+  .block_7 {background:<?=$this->getLayoutSetting('block_7Bg')?>;color:<?=$this->getLayoutSetting('block_7TextColor')?>;}
+  .block_7 .card {background:<?=$this->getLayoutSetting('block_7BlockBg')?>;}
+  </style>
 </section>
 <!-- end block_7 -->
 <?php endif; ?>

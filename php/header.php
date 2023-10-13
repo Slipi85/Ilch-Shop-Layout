@@ -14,7 +14,7 @@
     $date = $dateDiff;
   }
   ?>
-  <div class="top-nav bg-dark text-white">
+  <div class="top-nav">
     <div class="container pe-3 ps-3">
       <div class="gaming">
         <div class="row">
@@ -83,5 +83,9 @@
       </div>
     </div>
   </nav>
+  <style>
+  .top-nav {background:<?=$this->getLayoutSetting('totopNavBg')?>;color:<?=$this->getLayoutSetting('totopNavColor')?>;}
+  .top-nav-first-content span:after {background:<?=$this->getLayoutSetting('totopNavActionText')?>;}
+  </style>
 </header>
 <!-- header_shop end -->

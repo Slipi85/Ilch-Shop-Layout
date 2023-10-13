@@ -1,6 +1,6 @@
 <?php if ($this->getLayoutSetting('block_3Switch') == '1') : ?>
 <!-- block_3 begin -->
-<section class="block_3 bg-light">
+<section class="block_3">
   <div class="gaming">
     <div class="container pb-5 pt-5 pe-3 ps-3">
       <div class="block_3-inner">
@@ -52,5 +52,9 @@
     </div>
   </div>
 </section>
+<style>
+  .block_3 {background:<?=$this->getLayoutSetting('block_3Bg')?>}
+  .block_3 li {color:<?=$this->getLayoutSetting('block_3ListColor')?>;background:<?=$this->getLayoutSetting('block_3ListBg')?>}
+</style>
 <!-- block_3 end -->
 <?php endif; ?>

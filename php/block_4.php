@@ -17,7 +17,7 @@
           $hiddenthird = '';
         }?>
   <!-- begin block_4 -->
-<section class="block_4 pt-5 pb-5 bg-light">
+<section class="block_4 pt-5 pb-5">
   <div class="container">
     <div class="gaming">
       <div class="block_4-inner pe-3 ps-3">
@@ -114,6 +114,8 @@
   .block_4 .pic4 {
       background-image:url(<?=$this->getBaseUrl($this->getLayoutSetting('block_4block4img')) ?>);
   }
+    .block_4 {background:<?=$this->getLayoutSetting('block_4Bg')?>;color:<?=$this->getLayoutSetting('block_4TextColor')?>;}
+    .block_4 .card {background:<?=$this->getLayoutSetting('block_4BlockBg')?>;}
   </style>
 </section>
 <!-- block_4 end -->

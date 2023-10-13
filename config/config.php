@@ -32,6 +32,11 @@ class Config extends \Ilch\Config\Install
             'pageSettings' => [
                 'type' => 'separator',
             ],
+            'pageHeaderSpan' => [
+              'type' => 'bscolorpicker',
+              'default' => '#c70f22',
+              'description' => '',
+            ],
             'logo' => [
                 'type' => 'mediaselection',
                 'default' => 'application/layouts/shoplayout/img/logo/ilchShop_logo.png',
@@ -44,6 +49,21 @@ class Config extends \Ilch\Config\Install
                 'default' => '1',
                 'description' => '',
                 ],
+            'totopNavBg' => [
+              'type' => 'bscolorpicker',
+              'default' => '#212529',
+              'description' => '',
+            ],
+            'totopNavColor' => [
+              'type' => 'bscolorpicker',
+              'default' => '#ffffff',
+              'description' => '',
+            ],
+            'totopNavActionText' => [
+              'type' => 'bscolorpicker',
+              'default' => '#c70f22',
+              'description' => '',
+            ],
             'totopNavText' => [
                 'type' => 'text',
                 'default' => 'Exclusive Rabatte ! Dauer',
@@ -70,6 +90,11 @@ class Config extends \Ilch\Config\Install
             'slider-Header' => [
                 'type' => '',
                 'default' => '',
+                'description' => '',
+                ],
+            'sliderBg' => [
+                'type' => 'mediaselection',
+                'default' => 'application/layouts/shoplayout/img/bg/slider_background.jpg',
                 'description' => '',
                 ],
             'sliderHeader' => [
@@ -120,6 +145,11 @@ class Config extends \Ilch\Config\Install
                 'default' => '1',
                 'description' => '',
                 ],
+            'block_1Bg' => [
+              'type' => 'bscolorpicker',
+              'default' => '#c70f22',
+              'description' => '',
+            ],
             'block_1img1' => [
                 'type' => 'mediaselection',
                 'default' => 'application/layouts/shoplayout/img/logo/ilchShop_logo.png',
@@ -148,6 +178,16 @@ class Config extends \Ilch\Config\Install
                 'default' => '1',
                 'description' => '',
                 ],
+            'block_2Bg' => [
+              'type' => 'bscolorpicker',
+              'default' => '#f8f9fa',
+              'description' => '',
+            ],
+            'block_2IconColor' => [
+              'type' => 'bscolorpicker',
+              'default' => '#c70f22',
+              'description' => '',
+            ],
             'block_2-Header' => [
                 'type' => '',
                 'default' => '',
@@ -168,15 +208,20 @@ class Config extends \Ilch\Config\Install
                 'default' => 'application/layouts/shoplayout/img/pic/pic3.png',
                 'description' => 'block2img',
                 ],
-            'block_2list1' => [
-                'type' => '',
-                'default' => '',
-                'description' => '',
-                ],
+            'block_2ListBg' => [
+              'type' => 'bscolorpicker',
+              'default' => '#f8f9fa',
+              'description' => '',
+            ],
             'block_2List1icon' => [
                 'type' => 'text',
                 'default' => 'fa fa-check',
                 'description' => 'fa-icon',
+                ],
+            'block_2list1' => [
+                'type' => '',
+                'default' => '',
+                'description' => '',
                 ],
             'block_2List1Text' => [
                 'type' => 'ckeditorhtml',
@@ -261,6 +306,11 @@ class Config extends \Ilch\Config\Install
                 'default' => '1',
                 'description' => '',
                 ],
+            'block_3Bg' => [
+              'type' => 'bscolorpicker',
+              'default' => '#f8f9fa',
+              'description' => '',
+            ],
             'block_3Header' => [
                 'type' => 'text',
                 'default' => 'Unsere',
@@ -271,6 +321,16 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Service',
                 'description' => 'span',
                 ],
+            'block_3ListBg' => [
+              'type' => 'bscolorpicker',
+              'default' => '#ffffff',
+              'description' => '',
+            ],
+            'block_3ListColor' => [
+              'type' => 'bscolorpicker',
+              'default' => '#212529',
+              'description' => '',
+            ],
             'block_3List1' => [
                 'type' => '',
                 'default' => '',
@@ -359,6 +419,11 @@ class Config extends \Ilch\Config\Install
                 'default' => '1',
                 'description' => '',
                 ],
+            'block_4Bg' => [
+              'type' => 'bscolorpicker',
+              'default' => '#f8f9fa',
+              'description' => '',
+            ],
             'block_4-Header' => [
                 'type' => '',
                 'default' => '',
@@ -374,6 +439,16 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Team',
                 'description' => 'span',
                 ],
+            'block_4BlockBg' => [
+              'type' => 'bscolorpicker',
+              'default' => '#ffffff',
+              'description' => '',
+            ],
+            'block_4TextColor' => [
+              'type' => 'bscolorpicker',
+              'default' => '#212529',
+              'description' => '',
+            ],
             'block_4block1' => [
                 'type' => '',
                 'default' => '',
@@ -414,14 +489,14 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus vehicula placerat. Suspendisse sit amet condimentum urna. Phasellus suscipit, tortor.',
                 'description' => '',
                 ],
-            'block_4block3Switch' => [
-                'type' => 'flipswitch',
-                'default' => '1',
-                'description' => '',
-                ],
             'block_4block3' => [
                 'type' => '',
                 'default' => '',
+                'description' => '',
+                ],
+            'block_4block3Switch' => [
+                'type' => 'flipswitch',
+                'default' => '1',
                 'description' => '',
                 ],
             'block_4block3img' => [
@@ -439,14 +514,14 @@ class Config extends \Ilch\Config\Install
                 'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus vehicula placerat. Suspendisse sit amet condimentum urna. Phasellus suscipit, tortor.',
                 'description' => '',
                 ],
-            'block_4block4Switch' => [
-                'type' => 'flipswitch',
-                'default' => '1',
-                'description' => '',
-                ],
             'block_4block4' => [
                 'type' => '',
                 'default' => '',
+                'description' => '',
+                ],
+            'block_4block4Switch' => [
+                'type' => 'flipswitch',
+                'default' => '1',
                 'description' => '',
                 ],
             'block_4block4img' => [
@@ -472,6 +547,16 @@ class Config extends \Ilch\Config\Install
                 'default' => '1',
                 'description' => '',
                 ],
+            'block_5Bg' => [
+              'type' => 'mediaselection',
+              'default' => 'application/layouts/shoplayout/img/bg/info_background.jpg',
+              'description' => '',
+            ],
+            'block_5IconColor' => [
+              'type' => 'bscolorpicker',
+              'default' => '#c70f22',
+              'description' => '',
+            ],
             'block_5-Header' => [
                 'type' => '',
                 'default' => '',
@@ -535,6 +620,21 @@ class Config extends \Ilch\Config\Install
             'block_6Settings' => [
                 'type' => 'separator',
                 ],
+            'block_6Bg' => [
+              'type' => 'bscolorpicker',
+              'default' => '#f8f9fa',
+              'description' => '',
+            ],
+            'block_6TextColor' => [
+              'type' => 'bscolorpicker',
+              'default' => '#212529',
+              'description' => '',
+            ],
+            'block_6IconColor' => [
+              'type' => 'bscolorpicker',
+              'default' => '#c70f22',
+              'description' => '',
+            ],
             'block_6Header' => [
                 'type' => 'text',
                 'default' => 'Kontaktiere',
@@ -613,6 +713,21 @@ class Config extends \Ilch\Config\Install
                 'default' => '1',
                 'description' => '',
                 ],
+            'block_7Bg' => [
+              'type' => 'bscolorpicker',
+              'default' => '#f8f9fa',
+              'description' => '',
+            ],
+            'block_7BlockBg' => [
+              'type' => 'bscolorpicker',
+              'default' => '#ffffff',
+              'description' => '',
+            ],
+            'block_7TextColor' => [
+              'type' => 'bscolorpicker',
+              'default' => '#212529',
+              'description' => '',
+            ],
             'block_7block1' => [
                 'type' => '',
                 'default' => '',
@@ -761,6 +876,16 @@ class Config extends \Ilch\Config\Install
                 'default' => '1',
                 'description' => '',
                 ],
+            'block_8Bg' => [
+              'type' => 'bscolorpicker',
+              'default' => '#ffffff',
+              'description' => '',
+            ],
+            'block_8TextColor' => [
+              'type' => 'bscolorpicker',
+              'default' => '#212529',
+              'description' => '',
+            ],
             'block_8text' => [
                 'type' => 'text',
                 'default' => 'Abonniere unseren Newsletter',
