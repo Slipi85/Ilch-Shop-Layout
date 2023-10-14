@@ -12,9 +12,9 @@ class Config extends \Ilch\Config\Install
         'name' => 'Shop-Layout',
         'version' => '1.0.1',
         'author' => 'Ilch.de',
-        'link' => 'http://ilch.de',
-        'desc' => 'Das Shop-Layout wurde als Layout für das Modul "Kontakt" erstellr, es könnten trotzdem alle module ausgegeben werden. Die Startseite wird mit dem Modul Shop ausgegeben.Im Admincenter können sie einzellne Blöcke bearbeiten und aktivieren/deaktivieren.
-         Die Anordnung der Blöcke ist über das Admincenter nicht möglich, dies müßte in der application/layouts/shoplayout/start.php manuell durcgeführt werden in dem die Ordnung der include blöcke verschoben wird.',
+        'link' => 'https://ilch.de',
+        'desc' => 'Das Shop-Layout wurde als Layout für das Modul "Kontakt" erstellt, es können trotzdem alle Module ausgegeben werden. Die Startseite wird mit dem Modul Shop ausgegeben.Im Admincenter können Sie einzelne Blöcke bearbeiten und aktivieren/deaktivieren.
+         Die Anordnung der Blöcke ist über das Admincenter nicht möglich, dies müßte in der application/layouts/shoplayout/start.php manuell durchgeführt werden in dem die Ordnung der include blöcke verschoben wird.',
         'layouts' => [
             'index_full' => [
                 ['module' => 'user', 'controller' => 'panel'],
