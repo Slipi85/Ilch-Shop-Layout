@@ -6,13 +6,16 @@
 
 return [
   /* page settings */
-    'pageSettings' => 'Diverse Einstellungen',
+    'start' => '!Wichtig! </br><b>Die Startseite wird mit dem Modul Kontakt ausgegeben. Um dies einzustellen zu können, gehen sie in der  Navigation rechts auf das Zahnrad und wählen unter Startseite das Modul Kontakt aus.</b><br><br>
+    Um die Block ausgabe verändern zu können, müssen sie in ihren FTP Program unter application/layouts/shoplayout/start.php die Reihenfolge der include block ausgabe ändern.
+    Für weiter Fragen oder Hilfe <a href="https://www.ilch.de/" target="_blank">lch.de</a>',
+    'pageSettings' => '<b>Diverse Einstellungen</b>',
     'logo' => '└─ Logo',
     'pageHeaderSpan' => '└─ Überschrifft Span Color',
 
   /* topNavigation settings */
-    'totopNavAction' => 'Durch das aktivieren/deaktivierten können sie <b>Exklusive Tage</b> freigeben. Wichtig ist es ein Datum unter <b>Datum</b>',
-    'topnavSettings' => 'Oberste Navigation Einstellungen',
+    'totopNavAction' => 'Durch das aktivieren/deaktivierten können sie <b>Exklusive Tage</b> freigeben. Wichtig ist es ein Datum unter <b>Datum</b> einzutragen.',
+    'topnavSettings' => '<b>Oberste Navigation Einstellungen</b>',
     'totopNavBg' => '└─ Background',
     'totopNavColor' => '└─ Text',
     'totopNavActionText' => '└─ Tage Background',
@@ -20,11 +23,11 @@ return [
     'totopNavActionOff' => '└─ Text',
     'actionOff' => 'Dieser Text wird ausgegeben, wenn <b>Exklusive Tage</b> deaktiviert sind.',
     'totopNavDatum' => '└─ Datum',
-    'date' => 'geben sie das End-Datum der Exklusiven Tage wie folgt ein DD.MM.HHH',
+    'date' => 'geben sie das End-Datum der Exklusiven Tage wie folgt ein <b>DD.MM.HHH</b>',
     'totopNavMail' => '└─ Mail Adresse',
 
   /* slider settings */
-    'sliderSettings' => 'Slider Einstellungen',
+    'sliderSettings' => '<b>Slider Einstellungen</b>',
     'sliderBg' => '└─ Slider Background',
     'slider-Header' => '<b>Überschrifft</b>',
     'sliderHeader' => '└─ Überschrifft',
@@ -212,6 +215,7 @@ return [
     'block_7block4cordonSwitch' => '<b>Status</b> aktivieren/deaktivieren',
     'block_7block4Cordon' => '└─ Text',
     'block_7block4cordonBg' => '└─ Background ändern',
+    'block7img' => 'aktuelle maße 1000px X 1000px',
 
   /* block_8 settings */
     'block_8Settings' => '<b>Block 8 Einstellungen</b>',
@@ -220,6 +224,8 @@ return [
     'block_8TextColor' => '└─ Text Color',
     'block_8text' => '└─ Text',
 
+    'day' => 'Tag',
+    'days' => 'Tage',
     'home' => 'Home',
     'hello' => 'Hallo',
     'signup' => 'Registrieren',

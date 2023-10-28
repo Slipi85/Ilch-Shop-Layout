@@ -7,12 +7,19 @@
   }
   $date1 = date("d.m.Y");
   $date2 = $this->getLayoutSetting('totopNavDatum');
-  $dateDiff = dateDiffInDays($date1, $date2);
-  if($dateDiff < 10) {
-    $date = "0". $dateDiff;
+  $off = '00';
+  if($date1 > $date2) {
+    $date = $off;
+  } elseif(dateDiffInDays($date1, $date2) < 10) {
+    $date = '0' . dateDiffInDays($date1, $date2);
   } else {
-    $date = $dateDiff;
+    $date = dateDiffInDays($date1, $date2);
   }
+  if(dateDiffInDays($date1, $date2) < 2) {
+    $day = $this->getTrans('day');
+  } else {
+    $day = $this->getTrans('days');
+  };
   ?>
   <div class="top-nav">
     <div class="container pe-3 ps-3">
@@ -21,7 +28,7 @@
           <div class="col-12 col-sm-6">
             <div class="top-nav-first-content d-flex align-items-center">
               <?php if ($this->getLayoutSetting('totopNavAction') == '1') : ?>
-              <?=$this->getLayoutSetting('totopNavText')?> <span id="days"><?php printf($date);?></span> Tag
+              <?=$this->getLayoutSetting('totopNavText')?> <span id="days"><?php printf($date);?></span> <?=$day ?>
             <?php else: ?>
               <?=$this->getLayoutSetting('totopNavActionOff')?><span id="days">!</span>
             <?php endif; ?>
