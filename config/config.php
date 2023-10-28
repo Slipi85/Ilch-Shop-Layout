@@ -29,6 +29,9 @@ class Config extends \Ilch\Config\Install
             ]//only for example
         ],
         'settings' => [
+            'start' => [
+                'type' => 'separator',
+            ],
             'pageSettings' => [
                 'type' => 'separator',
             ],
@@ -87,14 +90,14 @@ class Config extends \Ilch\Config\Install
             'sliderSettings' => [
                 'type' => 'separator',
             ],
-            'slider-Header' => [
-                'type' => '',
-                'default' => '',
-                'description' => '',
-                ],
             'sliderBg' => [
                 'type' => 'mediaselection',
                 'default' => 'application/layouts/shoplayout/img/bg/slider_background.jpg',
+                'description' => '',
+                ],
+            'slider-Header' => [
+                'type' => '',
+                'default' => '',
                 'description' => '',
                 ],
             'sliderHeader' => [
